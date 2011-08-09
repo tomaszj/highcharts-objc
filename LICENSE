@@ -1,0 +1,8 @@
+highcharts-objc 0.1 - Objective-C wrapper for Highcharts (http://www.highcharts.com) graph charting library
+
+Copyright (c) 2011 Tomasz Janeczko (https://github.com/tomaszj/graphael-objc)
+All code except for libraries is licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
+
+For libraries licenses, please see their websites.
+
+Highcharts library is free for non-commercial use. Please see http://www.highcharts.com for more information about licensing and pricing.

@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B36A576A13EC022B00E20E00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36A576913EC022B00E20E00 /* UIKit.framework */; };
+		B36A576C13EC022B00E20E00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36A576B13EC022B00E20E00 /* Foundation.framework */; };
+		B36A576E13EC022B00E20E00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36A576D13EC022B00E20E00 /* CoreGraphics.framework */; };
+		B36A577413EC022B00E20E00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B36A577213EC022B00E20E00 /* InfoPlist.strings */; };
+		B36A577713EC022B00E20E00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A577613EC022B00E20E00 /* main.m */; };
+		B36A577A13EC022C00E20E00 /* HighchartsObjCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A577913EC022C00E20E00 /* HighchartsObjCAppDelegate.m */; };
+		B36A577D13EC022C00E20E00 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36A577B13EC022C00E20E00 /* MainWindow.xib */; };
+		B36A578013EC022C00E20E00 /* HighchartsObjCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A577F13EC022C00E20E00 /* HighchartsObjCViewController.m */; };
+		B36A578313EC022D00E20E00 /* HighchartsObjCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36A578113EC022D00E20E00 /* HighchartsObjCViewController.xib */; };
+		B36A579B13EC02D100E20E00 /* main.html in Resources */ = {isa = PBXBuildFile; fileRef = B36A579513EC02D100E20E00 /* main.html */; };
+		B36A57A213EC055800E20E00 /* HighchartsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A57A113EC055800E20E00 /* HighchartsHelper.m */; };
+		B36A57A313EC073C00E20E00 /* console.js in Resources */ = {isa = PBXBuildFile; fileRef = B36A579613EC02D100E20E00 /* console.js */; };
+		B36A57A413EC073F00E20E00 /* highcharts_helper.js in Resources */ = {isa = PBXBuildFile; fileRef = B36A579713EC02D100E20E00 /* highcharts_helper.js */; };
+		B36A57A513EC074200E20E00 /* jquery-1.4.2.js in Resources */ = {isa = PBXBuildFile; fileRef = B36A579813EC02D100E20E00 /* jquery-1.4.2.js */; };
+		B36A57A813EC24EB00E20E00 /* highcharts.js in Resources */ = {isa = PBXBuildFile; fileRef = B36A57A613EC24BD00E20E00 /* highcharts.js */; };
+		B36A57AB13EC34A400E20E00 /* HighchartsXYOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A57AA13EC34A400E20E00 /* HighchartsXYOptions.m */; };
+		B3A133B113F036B500E06CB7 /* HighChartsPieOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A133B013F036B500E06CB7 /* HighChartsPieOptions.m */; };
+		B3A133BD13F0456F00E06CB7 /* ExamplePieSection.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A133BC13F0456F00E06CB7 /* ExamplePieSection.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B36A576513EC022B00E20E00 /* HighchartsObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighchartsObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36A576913EC022B00E20E00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B36A576B13EC022B00E20E00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B36A576D13EC022B00E20E00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B36A577113EC022B00E20E00 /* HighchartsObjC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HighchartsObjC-Info.plist"; sourceTree = "<group>"; };
+		B36A577313EC022B00E20E00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B36A577513EC022B00E20E00 /* HighchartsObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HighchartsObjC-Prefix.pch"; sourceTree = "<group>"; };
+		B36A577613EC022B00E20E00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B36A577813EC022B00E20E00 /* HighchartsObjCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HighchartsObjCAppDelegate.h; sourceTree = "<group>"; };
+		B36A577913EC022C00E20E00 /* HighchartsObjCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighchartsObjCAppDelegate.m; sourceTree = "<group>"; };
+		B36A577C13EC022C00E20E00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		B36A577E13EC022C00E20E00 /* HighchartsObjCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HighchartsObjCViewController.h; sourceTree = "<group>"; };
+		B36A577F13EC022C00E20E00 /* HighchartsObjCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighchartsObjCViewController.m; sourceTree = "<group>"; };
+		B36A578213EC022D00E20E00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HighchartsObjCViewController.xib; sourceTree = "<group>"; };
+		B36A579513EC02D100E20E00 /* main.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = main.html; sourceTree = "<group>"; };
+		B36A579613EC02D100E20E00 /* console.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = console.js; sourceTree = "<group>"; };
+		B36A579713EC02D100E20E00 /* highcharts_helper.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = highcharts_helper.js; sourceTree = "<group>"; };
+		B36A579813EC02D100E20E00 /* jquery-1.4.2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.4.2.js"; sourceTree = "<group>"; };
+		B36A57A013EC055800E20E00 /* HighchartsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighchartsHelper.h; sourceTree = "<group>"; };
+		B36A57A113EC055800E20E00 /* HighchartsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighchartsHelper.m; sourceTree = "<group>"; };
+		B36A57A613EC24BD00E20E00 /* highcharts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = highcharts.js; sourceTree = "<group>"; };
+		B36A57A913EC34A400E20E00 /* HighchartsXYOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighchartsXYOptions.h; sourceTree = "<group>"; };
+		B36A57AA13EC34A400E20E00 /* HighchartsXYOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighchartsXYOptions.m; sourceTree = "<group>"; };
+		B3A133AF13F036B500E06CB7 /* HighChartsPieOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighChartsPieOptions.h; sourceTree = "<group>"; };
+		B3A133B013F036B500E06CB7 /* HighChartsPieOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighChartsPieOptions.m; sourceTree = "<group>"; };
+		B3A133BA13F0413700E06CB7 /* PieChartSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartSection.h; sourceTree = "<group>"; };
+		B3A133BB13F0456F00E06CB7 /* ExamplePieSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamplePieSection.h; sourceTree = "<group>"; };
+		B3A133BC13F0456F00E06CB7 /* ExamplePieSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamplePieSection.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B36A576213EC022A00E20E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36A576A13EC022B00E20E00 /* UIKit.framework in Frameworks */,
+				B36A576C13EC022B00E20E00 /* Foundation.framework in Frameworks */,
+				B36A576E13EC022B00E20E00 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B36A575A13EC022800E20E00 = {
+			isa = PBXGroup;
+			children = (
+				B36A576F13EC022B00E20E00 /* HighchartsObjC */,
+				B36A576813EC022B00E20E00 /* Frameworks */,
+				B36A576613EC022B00E20E00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B36A576613EC022B00E20E00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B36A576513EC022B00E20E00 /* HighchartsObjC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B36A576813EC022B00E20E00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B36A576913EC022B00E20E00 /* UIKit.framework */,
+				B36A576B13EC022B00E20E00 /* Foundation.framework */,
+				B36A576D13EC022B00E20E00 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B36A576F13EC022B00E20E00 /* HighchartsObjC */ = {
+			isa = PBXGroup;
+			children = (
+				B36A579F13EC02E000E20E00 /* HighChartsJSFiles */,
+				B36A577813EC022B00E20E00 /* HighchartsObjCAppDelegate.h */,
+				B36A577913EC022C00E20E00 /* HighchartsObjCAppDelegate.m */,
+				B36A577B13EC022C00E20E00 /* MainWindow.xib */,
+				B36A577E13EC022C00E20E00 /* HighchartsObjCViewController.h */,
+				B36A577F13EC022C00E20E00 /* HighchartsObjCViewController.m */,
+				B36A578113EC022D00E20E00 /* HighchartsObjCViewController.xib */,
+				B3A133BB13F0456F00E06CB7 /* ExamplePieSection.h */,
+				B3A133BC13F0456F00E06CB7 /* ExamplePieSection.m */,
+				B36A577013EC022B00E20E00 /* Supporting Files */,
+			);
+			path = HighchartsObjC;
+			sourceTree = "<group>";
+		};
+		B36A577013EC022B00E20E00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B36A577113EC022B00E20E00 /* HighchartsObjC-Info.plist */,
+				B36A577213EC022B00E20E00 /* InfoPlist.strings */,
+				B36A577513EC022B00E20E00 /* HighchartsObjC-Prefix.pch */,
+				B36A577613EC022B00E20E00 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B36A579F13EC02E000E20E00 /* HighChartsJSFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B36A57A013EC055800E20E00 /* HighchartsHelper.h */,
+				B36A57A113EC055800E20E00 /* HighchartsHelper.m */,
+				B36A57A913EC34A400E20E00 /* HighchartsXYOptions.h */,
+				B36A57AA13EC34A400E20E00 /* HighchartsXYOptions.m */,
+				B36A579513EC02D100E20E00 /* main.html */,
+				B36A57A613EC24BD00E20E00 /* highcharts.js */,
+				B36A579613EC02D100E20E00 /* console.js */,
+				B36A579713EC02D100E20E00 /* highcharts_helper.js */,
+				B36A579813EC02D100E20E00 /* jquery-1.4.2.js */,
+				B3A133AF13F036B500E06CB7 /* HighChartsPieOptions.h */,
+				B3A133B013F036B500E06CB7 /* HighChartsPieOptions.m */,
+				B3A133BA13F0413700E06CB7 /* PieChartSection.h */,
+			);
+			name = HighChartsJSFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B36A576413EC022A00E20E00 /* HighchartsObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B36A578613EC022D00E20E00 /* Build configuration list for PBXNativeTarget "HighchartsObjC" */;
+			buildPhases = (
+				B36A576113EC022A00E20E00 /* Sources */,
+				B36A576213EC022A00E20E00 /* Frameworks */,
+				B36A576313EC022A00E20E00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HighchartsObjC;
+			productName = HighchartsObjC;
+			productReference = B36A576513EC022B00E20E00 /* HighchartsObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B36A575C13EC022900E20E00 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = B36A575F13EC022900E20E00 /* Build configuration list for PBXProject "HighchartsObjC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B36A575A13EC022800E20E00;
+			productRefGroup = B36A576613EC022B00E20E00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B36A576413EC022A00E20E00 /* HighchartsObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B36A576313EC022A00E20E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36A57A813EC24EB00E20E00 /* highcharts.js in Resources */,
+				B36A57A513EC074200E20E00 /* jquery-1.4.2.js in Resources */,
+				B36A57A413EC073F00E20E00 /* highcharts_helper.js in Resources */,
+				B36A57A313EC073C00E20E00 /* console.js in Resources */,
+				B36A577413EC022B00E20E00 /* InfoPlist.strings in Resources */,
+				B36A577D13EC022C00E20E00 /* MainWindow.xib in Resources */,
+				B36A578313EC022D00E20E00 /* HighchartsObjCViewController.xib in Resources */,
+				B36A579B13EC02D100E20E00 /* main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B36A576113EC022A00E20E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36A577713EC022B00E20E00 /* main.m in Sources */,
+				B36A577A13EC022C00E20E00 /* HighchartsObjCAppDelegate.m in Sources */,
+				B36A578013EC022C00E20E00 /* HighchartsObjCViewController.m in Sources */,
+				B36A57A213EC055800E20E00 /* HighchartsHelper.m in Sources */,
+				B36A57AB13EC34A400E20E00 /* HighchartsXYOptions.m in Sources */,
+				B3A133B113F036B500E06CB7 /* HighChartsPieOptions.m in Sources */,
+				B3A133BD13F0456F00E06CB7 /* ExamplePieSection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B36A577213EC022B00E20E00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B36A577313EC022B00E20E00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B36A577B13EC022C00E20E00 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B36A577C13EC022C00E20E00 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		B36A578113EC022D00E20E00 /* HighchartsObjCViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B36A578213EC022D00E20E00 /* en */,
+			);
+			name = HighchartsObjCViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B36A578413EC022D00E20E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B36A578513EC022D00E20E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		B36A578713EC022D00E20E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HighchartsObjC/HighchartsObjC-Prefix.pch";
+				INFOPLIST_FILE = "HighchartsObjC/HighchartsObjC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B36A578813EC022D00E20E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HighchartsObjC/HighchartsObjC-Prefix.pch";
+				INFOPLIST_FILE = "HighchartsObjC/HighchartsObjC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B36A575F13EC022900E20E00 /* Build configuration list for PBXProject "HighchartsObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36A578413EC022D00E20E00 /* Debug */,
+				B36A578513EC022D00E20E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B36A578613EC022D00E20E00 /* Build configuration list for PBXNativeTarget "HighchartsObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36A578713EC022D00E20E00 /* Debug */,
+				B36A578813EC022D00E20E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B36A575C13EC022900E20E00 /* Project object */;
+}
