@@ -9,6 +9,7 @@
 #import "HighchartsHelper.h"
 #import "HighchartsXYOptions.h"
 #import "HighchartsPieOptions.h"
+#import "HighstockOptions.h"
 
 @implementation HighchartsHelper
 
@@ -24,6 +25,11 @@
     NSString *jsString = [NSString stringWithFormat:@"createLineChart(\"%@\", %@, \"My own title\", %@);", options.chartTitle, yAxisTitle, [self getJSDataPointsWithXValues:options.xValues andYValues:options.yValues]];
     
     [webView stringByEvaluatingJavaScriptFromString:jsString];
+}
+
++ (void)createStockChartInWebView:(UIWebView*)webView withOptions:(HighstockOptions*)options {
+    NSLog(@"Series string: %@", [options getSeriesString]);
+    [webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"createLineScopingChart(\"%@\",\"%@\",\"%@\",%@);", options.title, options.axisTitle, options.title, [options getSeriesString]]];
 }
 
 + (NSString*)getJSDataPointsWithXValues:(NSArray*)xValues andYValues:(NSArray*)yValues {
@@ -70,6 +76,10 @@
     NSString *colorAsString = [NSString stringWithFormat:@"#%02X%02X%02X", r, g, b];
     NSLog(@"%@", colorAsString);
     return colorAsString;
+}
+
++ (void)setSeriesInWebView:(UIWebView *)webView withOptions:(id<OptionsWithSeries>)options {
+    [webView stringByEvaluatingJavaScriptFromString:[options getSeriesString]];
 }
 
 @end

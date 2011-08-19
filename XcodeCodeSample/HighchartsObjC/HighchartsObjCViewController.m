@@ -11,6 +11,8 @@
 #import "HighchartsXYOptions.h"
 #import "HighChartsPieOptions.h"
 #import "ExamplePieSection.h"
+#import "HighstockOptions.h"
+#import "DatePoint.h"
 
 @implementation HighchartsObjCViewController
 @synthesize webView=_webView;
@@ -30,11 +32,11 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     
-    NSArray *xValues = [NSArray arrayWithObjects:[NSNumber numberWithFloat:3.0], [NSNumber numberWithFloat:4.0], [NSNumber numberWithFloat:5.0], nil];
-    NSArray *yValues = [NSArray arrayWithObjects:[NSNumber numberWithFloat:6.0], [NSNumber numberWithFloat:-2.0], [NSNumber numberWithFloat:5.0], nil];
+    //NSArray *xValues = [NSArray arrayWithObjects:[NSNumber numberWithFloat:3.0], [NSNumber numberWithFloat:4.0], [NSNumber numberWithFloat:5.0], nil];
+    //NSArray *yValues = [NSArray arrayWithObjects:[NSNumber numberWithFloat:6.0], [NSNumber numberWithFloat:-2.0], [NSNumber numberWithFloat:5.0], nil];
     
-    HighchartsXYOptions *options = [[HighchartsXYOptions alloc] initWithTitle:@"ChartTitle" andXValues:xValues andYValues:yValues];
-    options.yAxisTitle = @"My Title";
+    //HighchartsXYOptions *options = [[HighchartsXYOptions alloc] initWithTitle:@"ChartTitle" andXValues:xValues andYValues:yValues];
+    //options.yAxisTitle = @"My Title";
     
     /*HighChartsPieOptions *options = [HighChartsPieOptions new];
     options.chartTitle = @"My title";
@@ -45,8 +47,20 @@
     [options addObject: section2];
     [options addObject: section3];*/
     
-    [HighchartsHelper createLineChartInWebView:self.webView withOptions:options];
+    //[HighchartsHelper createLineChartInWebView:self.webView withOptions:options];
     //[HighchartsHelper createPieChartInWebView:self.webView withOptions:options];
+    
+    //    [options release];
+    
+    HighstockOptions *options = [HighstockOptions new];
+    options.title = @"Zomg!";
+    options.axisTitle = @"Income";
+    [options addDatePoint:[DatePoint datePointWithDate:[NSDate date] andValue:[NSNumber numberWithInteger:15]]];
+    [options addDatePoint:[DatePoint datePointWithDate:[NSDate dateWithTimeIntervalSinceNow:80000] andValue:[NSNumber numberWithInteger:12]]];
+    [options addDatePoint:[DatePoint datePointWithDate:[NSDate dateWithTimeIntervalSinceNow:160000] andValue:[NSNumber numberWithInteger:8]]];
+    [options addDatePoint:[DatePoint datePointWithDate:[NSDate dateWithTimeIntervalSinceNow:320000] andValue:[NSNumber numberWithInteger:0]]];
+    
+    [HighchartsHelper createStockChartInWebView:self.webView withOptions:options];
     
     [options release];
 }

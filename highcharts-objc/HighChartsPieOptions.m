@@ -52,4 +52,8 @@
     [self.sectionsArray addObject:object];
 }
 
+- (NSString *)getSeriesString {
+    return [self getSectionsArrayAsJSString];
+}
+
 @end

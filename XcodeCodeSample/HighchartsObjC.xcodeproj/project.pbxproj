@@ -23,8 +23,12 @@
 		B36A57A513EC074200E20E00 /* jquery-1.4.2.js in Resources */ = {isa = PBXBuildFile; fileRef = B36A579813EC02D100E20E00 /* jquery-1.4.2.js */; };
 		B36A57A813EC24EB00E20E00 /* highcharts.js in Resources */ = {isa = PBXBuildFile; fileRef = B36A57A613EC24BD00E20E00 /* highcharts.js */; };
 		B36A57AB13EC34A400E20E00 /* HighchartsXYOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A57AA13EC34A400E20E00 /* HighchartsXYOptions.m */; };
+		B3962EA913F2A73E00F62D4D /* highstock.js in Resources */ = {isa = PBXBuildFile; fileRef = B3962EA613F2A72D00F62D4D /* highstock.js */; };
+		B3962EAE13F2A9C600F62D4D /* HighstockOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B3962EAD13F2A9C600F62D4D /* HighstockOptions.m */; };
+		B3962EAF13F2AAC500F62D4D /* highstock_helper.js in Resources */ = {isa = PBXBuildFile; fileRef = B3962EAA13F2A77900F62D4D /* highstock_helper.js */; };
 		B3A133B113F036B500E06CB7 /* HighChartsPieOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A133B013F036B500E06CB7 /* HighChartsPieOptions.m */; };
 		B3A133BD13F0456F00E06CB7 /* ExamplePieSection.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A133BC13F0456F00E06CB7 /* ExamplePieSection.m */; };
+		B3AC895F13FE6B3C0005CB24 /* DatePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AC895E13FE6B3C0005CB24 /* DatePoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,11 +55,18 @@
 		B36A57A613EC24BD00E20E00 /* highcharts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = highcharts.js; sourceTree = "<group>"; };
 		B36A57A913EC34A400E20E00 /* HighchartsXYOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighchartsXYOptions.h; sourceTree = "<group>"; };
 		B36A57AA13EC34A400E20E00 /* HighchartsXYOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighchartsXYOptions.m; sourceTree = "<group>"; };
+		B3962EA613F2A72D00F62D4D /* highstock.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = highstock.js; sourceTree = "<group>"; };
+		B3962EAA13F2A77900F62D4D /* highstock_helper.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = highstock_helper.js; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		B3962EAC13F2A9C600F62D4D /* HighstockOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighstockOptions.h; sourceTree = "<group>"; };
+		B3962EAD13F2A9C600F62D4D /* HighstockOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighstockOptions.m; sourceTree = "<group>"; };
 		B3A133AF13F036B500E06CB7 /* HighChartsPieOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighChartsPieOptions.h; sourceTree = "<group>"; };
 		B3A133B013F036B500E06CB7 /* HighChartsPieOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighChartsPieOptions.m; sourceTree = "<group>"; };
 		B3A133BA13F0413700E06CB7 /* PieChartSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartSection.h; sourceTree = "<group>"; };
 		B3A133BB13F0456F00E06CB7 /* ExamplePieSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamplePieSection.h; sourceTree = "<group>"; };
 		B3A133BC13F0456F00E06CB7 /* ExamplePieSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamplePieSection.m; sourceTree = "<group>"; };
+		B3AC895B13FE687E0005CB24 /* OptionsWithSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsWithSeries.h; sourceTree = "<group>"; };
+		B3AC895D13FE6B3C0005CB24 /* DatePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePoint.h; sourceTree = "<group>"; };
+		B3AC895E13FE6B3C0005CB24 /* DatePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,16 +143,23 @@
 			children = (
 				B36A57A013EC055800E20E00 /* HighchartsHelper.h */,
 				B36A57A113EC055800E20E00 /* HighchartsHelper.m */,
+				B3962EAC13F2A9C600F62D4D /* HighstockOptions.h */,
+				B3962EAD13F2A9C600F62D4D /* HighstockOptions.m */,
 				B36A57A913EC34A400E20E00 /* HighchartsXYOptions.h */,
 				B36A57AA13EC34A400E20E00 /* HighchartsXYOptions.m */,
-				B36A579513EC02D100E20E00 /* main.html */,
-				B36A57A613EC24BD00E20E00 /* highcharts.js */,
-				B36A579613EC02D100E20E00 /* console.js */,
-				B36A579713EC02D100E20E00 /* highcharts_helper.js */,
-				B36A579813EC02D100E20E00 /* jquery-1.4.2.js */,
 				B3A133AF13F036B500E06CB7 /* HighChartsPieOptions.h */,
 				B3A133B013F036B500E06CB7 /* HighChartsPieOptions.m */,
+				B3AC895B13FE687E0005CB24 /* OptionsWithSeries.h */,
+				B36A579513EC02D100E20E00 /* main.html */,
+				B36A57A613EC24BD00E20E00 /* highcharts.js */,
+				B3962EA613F2A72D00F62D4D /* highstock.js */,
+				B36A579613EC02D100E20E00 /* console.js */,
+				B36A579713EC02D100E20E00 /* highcharts_helper.js */,
+				B3962EAA13F2A77900F62D4D /* highstock_helper.js */,
+				B36A579813EC02D100E20E00 /* jquery-1.4.2.js */,
 				B3A133BA13F0413700E06CB7 /* PieChartSection.h */,
+				B3AC895D13FE6B3C0005CB24 /* DatePoint.h */,
+				B3AC895E13FE6B3C0005CB24 /* DatePoint.m */,
 			);
 			name = HighChartsJSFiles;
 			sourceTree = "<group>";
@@ -193,6 +211,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3962EAF13F2AAC500F62D4D /* highstock_helper.js in Resources */,
+				B3962EA913F2A73E00F62D4D /* highstock.js in Resources */,
 				B36A57A813EC24EB00E20E00 /* highcharts.js in Resources */,
 				B36A57A513EC074200E20E00 /* jquery-1.4.2.js in Resources */,
 				B36A57A413EC073F00E20E00 /* highcharts_helper.js in Resources */,
@@ -218,6 +238,8 @@
 				B36A57AB13EC34A400E20E00 /* HighchartsXYOptions.m in Sources */,
 				B3A133B113F036B500E06CB7 /* HighChartsPieOptions.m in Sources */,
 				B3A133BD13F0456F00E06CB7 /* ExamplePieSection.m in Sources */,
+				B3962EAE13F2A9C600F62D4D /* HighstockOptions.m in Sources */,
+				B3AC895F13FE6B3C0005CB24 /* DatePoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

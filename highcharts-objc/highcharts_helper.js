@@ -1,7 +1,6 @@
 function createLineChart(chartTitle, yAxisTitle, dataTitle, dataPoints) {
-    var chart;
     jQuery(function() {
-        chart = new Highcharts.Chart({
+        window.chart = new Highcharts.Chart({
             chart: {
                 renderTo: 'container',
                 defaultSeriesType: 'line',
@@ -13,10 +12,6 @@ function createLineChart(chartTitle, yAxisTitle, dataTitle, dataPoints) {
                 text: chartTitle,
                 x: -20 //center
             },
-//            subtitle: {
-//                text: 'Source: WorldClimate.com',
-//                x: -20
-//            },
             xAxis: {
                 labels: {
                     formatter: function() {
@@ -61,11 +56,11 @@ function createLineChart(chartTitle, yAxisTitle, dataTitle, dataPoints) {
 }
 
 function createPieChart(chartTitle, dataArray) {
-    var chart;
+
     var limit;
     $(document).ready(function() {
       limit = Math.floor(Math.min(window.innerHeight, window.innerWidth) * 0.66);
-      chart = new Highcharts.Chart({
+      window.chart = new Highcharts.Chart({
            chart: {
                renderTo: 'container',
                defaultSeriesType: 'pie',
@@ -107,7 +102,6 @@ function createPieChart(chartTitle, dataArray) {
                y: 5
            },
            series: [{
-                type: 'pie',
                 name: 'Data',
                 animation: false,
                 data: dataArray

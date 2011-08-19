@@ -7,7 +7,7 @@
 //
 
 #import "HighchartsXYOptions.h"
-
+#import "HighchartsHelper.h"
 
 @implementation HighchartsXYOptions
 @synthesize xValues, yValues, chartTitle, yAxisTitle;
@@ -28,6 +28,10 @@
     self.yValues = nil;
     self.chartTitle = nil;
     [super dealloc];
+}
+
+- (NSString *)getSeriesString {
+    return [HighchartsHelper getJSDataPointsWithXValues:self.xValues andYValues:self.yValues];
 }
 
 @end

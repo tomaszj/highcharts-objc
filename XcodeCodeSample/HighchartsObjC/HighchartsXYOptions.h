@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "OptionsWithSeries.h"
 
 // Class, which holds all data needed to render a line chart. This includes mandatory objects such as:
 // xValues - array of NSNumbers representing data X values
@@ -14,7 +15,7 @@
 // *** Both xValues and yValues must have the same length! ***
 // chartTitle - title of whole chart, used at the top
 // yAxisTitle (optional) - title of y axis. If nil or empty, it will be hidden
-@interface HighchartsXYOptions : NSObject {
+@interface HighchartsXYOptions : NSObject <OptionsWithSeries> {
     NSArray *xValues;
     NSArray *yValues;
     NSString *chartTitle;
