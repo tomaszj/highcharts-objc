@@ -33,7 +33,7 @@
     [string appendString:@"["];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy,MM,dd"];
+    [dateFormatter setDateFormat:@"yyyy,MM'-1',dd"];
     for (DatePoint *point in self.datePoints) {
         [string appendFormat:@"[Date.UTC(%@),%@]", [dateFormatter stringFromDate:point.date], point.value];
         if ([self.datePoints indexOfObject:point] != [self.datePoints count] - 1) {
