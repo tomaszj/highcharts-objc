@@ -6,7 +6,8 @@ function createLineChart(chartTitle, yAxisTitle, dataTitle, dataPoints) {
                 defaultSeriesType: 'line',
                 marginBottom: 50,
                 height: window.height,
-                width: window.width
+                width: window.width,
+                backgroundColor: 'rgba(255,255,255,0)'
             },
             title: {
                 text: chartTitle,
@@ -67,11 +68,12 @@ function createPieChart(chartTitle, dataArray) {
                                    //               animation: false,
                margin: [0, 0, 0, 0],                                        
                height: window.height,
-               width: window.width
+               width: window.width,
+               backgroundColor: 'rgba(255,255,255,0)'
            },
            tooltip: {
                formatter: function() {
-                   return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+                   return '<b>'+ this.point.name +'</b>: '+ this.y +' [units]';
                }
 
            },

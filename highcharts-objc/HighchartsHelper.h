@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "OptionsWithSeries.h"
+#import "HighchartsBaseOptions.h"
 
 @class HighchartsXYOptions;
 @class HighChartsPieOptions;
@@ -16,6 +17,7 @@
 @interface HighchartsHelper : NSObject {
     
 }
++ (void)initWebView:(UIWebView*)webView withOptions:(HighchartsBaseOptions*)options;
 + (void)createPieChartInWebView:(UIWebView*)webView withOptions:(HighChartsPieOptions*)options;
 + (void)createLineChartInWebView:(UIWebView*)webView withOptions:(HighchartsXYOptions*)options;
 + (void)createStockChartInWebView:(UIWebView*)webView withOptions:(HighstockOptions*)options;

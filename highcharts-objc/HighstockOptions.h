@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HighchartsBaseOptions.h"
 #import "OptionsWithSeries.h"
 
 @class DatePoint;
 
-@interface HighstockOptions : NSObject <OptionsWithSeries> {
+@interface HighstockOptions : HighchartsBaseOptions <OptionsWithSeries> {
     NSMutableArray *datePoints;
     NSString *title;
     NSString *axisTitle;

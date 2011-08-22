@@ -13,8 +13,13 @@
 
 @implementation HighchartsHelper
 
-+ (void)createLineChartInWebView:(UIWebView*)webView withOptions:(HighchartsXYOptions *)options{
++ (void)initWebView:(UIWebView *)webView withOptions:(HighchartsBaseOptions *)options {
+    [webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"$('body').css('background-color', '%@');", [self getJSStringWithUIColor:options.backgroundColor]]];
+}
 
++ (void)createLineChartInWebView:(UIWebView*)webView withOptions:(HighchartsXYOptions *)options{
+    [self initWebView:webView withOptions:options];
+    
     NSString *yAxisTitle = options.yAxisTitle;
     if ([yAxisTitle length] == 0) {
         yAxisTitle = @"null";
@@ -28,7 +33,7 @@
 }
 
 + (void)createStockChartInWebView:(UIWebView*)webView withOptions:(HighstockOptions*)options {
-    NSLog(@"Series string: %@", [options getSeriesString]);
+    [self initWebView:webView withOptions:options];
     [webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"createLineScopingChart(\"%@\",\"%@\",\"%@\",%@);", options.title, options.axisTitle, options.title, [options getSeriesString]]];
 }
 
@@ -60,16 +65,24 @@
 }
 
 + (void)createPieChartInWebView:(UIWebView *)webView withOptions:(HighChartsPieOptions *)options {
+    [self initWebView:webView withOptions:options];
     NSString *jsString = [NSString stringWithFormat:@"createPieChart(\"%@\", %@);", options.chartTitle, [options getSectionsArrayAsJSString]];
     
     [webView stringByEvaluatingJavaScriptFromString:jsString];
 }
 
 + (NSString *)getJSStringWithUIColor:(UIColor *)color {
+    if ([color isEqual:[UIColor whiteColor]]) {
+        return @"#FFFFFF";
+    } else if ([color isEqual:[UIColor blackColor]]) {
+        return @"#000000";
+    }
+    
     const CGFloat *components = CGColorGetComponents(color.CGColor);
     int r = 0xFF * components[0];
     int g = 0xFF * components[1];
     int b = 0xFF * components[2];
+    int a = 0xFF * components[3];
     
     //    NSLog(@"%02X %02X %02X, %i %i %i", r, g, b, r, g, b);
     

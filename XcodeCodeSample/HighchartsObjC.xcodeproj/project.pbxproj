@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B359D1301402ACB900120BC6 /* HighchartsBaseOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B359D12F1402ACB900120BC6 /* HighchartsBaseOptions.m */; };
 		B36A576A13EC022B00E20E00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36A576913EC022B00E20E00 /* UIKit.framework */; };
 		B36A576C13EC022B00E20E00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36A576B13EC022B00E20E00 /* Foundation.framework */; };
 		B36A576E13EC022B00E20E00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36A576D13EC022B00E20E00 /* CoreGraphics.framework */; };
@@ -32,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B359D12E1402ACB900120BC6 /* HighchartsBaseOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighchartsBaseOptions.h; sourceTree = "<group>"; };
+		B359D12F1402ACB900120BC6 /* HighchartsBaseOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighchartsBaseOptions.m; sourceTree = "<group>"; };
 		B36A576513EC022B00E20E00 /* HighchartsObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighchartsObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36A576913EC022B00E20E00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B36A576B13EC022B00E20E00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -149,6 +152,8 @@
 				B36A57AA13EC34A400E20E00 /* HighchartsXYOptions.m */,
 				B3A133AF13F036B500E06CB7 /* HighChartsPieOptions.h */,
 				B3A133B013F036B500E06CB7 /* HighChartsPieOptions.m */,
+				B359D12E1402ACB900120BC6 /* HighchartsBaseOptions.h */,
+				B359D12F1402ACB900120BC6 /* HighchartsBaseOptions.m */,
 				B3AC895B13FE687E0005CB24 /* OptionsWithSeries.h */,
 				B36A579513EC02D100E20E00 /* main.html */,
 				B36A57A613EC24BD00E20E00 /* highcharts.js */,
@@ -240,6 +245,7 @@
 				B3A133BD13F0456F00E06CB7 /* ExamplePieSection.m in Sources */,
 				B3962EAE13F2A9C600F62D4D /* HighstockOptions.m in Sources */,
 				B3AC895F13FE6B3C0005CB24 /* DatePoint.m in Sources */,
+				B359D1301402ACB900120BC6 /* HighchartsBaseOptions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

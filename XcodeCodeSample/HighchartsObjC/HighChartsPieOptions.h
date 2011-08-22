@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "OptionsWithSeries.h"
 #import "PieChartSection.h"
+#import "HighchartsBaseOptions.h"
 
 
-@interface HighChartsPieOptions : NSObject <OptionsWithSeries> {
+@interface HighChartsPieOptions : HighchartsBaseOptions <OptionsWithSeries> {
     NSMutableArray *sectionsArray;
     NSString *chartTitle;
 }

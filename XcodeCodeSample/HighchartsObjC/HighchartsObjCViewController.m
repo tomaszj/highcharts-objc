@@ -60,6 +60,7 @@
     [options addDatePoint:[DatePoint datePointWithDate:[NSDate dateWithTimeIntervalSinceNow:160000] andValue:[NSNumber numberWithInteger:8]]];
     [options addDatePoint:[DatePoint datePointWithDate:[NSDate dateWithTimeIntervalSinceNow:320000] andValue:[NSNumber numberWithInteger:0]]];
     
+    options.backgroundColor = [UIColor blueColor];
     [HighchartsHelper createStockChartInWebView:self.webView withOptions:options];
     
     [options release];
